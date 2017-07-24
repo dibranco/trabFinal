@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1500918118 source:c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"TabelaHash.h"
+
+1432898780 source:c:\users\user1\dropbox\bsi\ed2\trabalhofinal\grafo.c
+	<stdio.h>
+	<stdlib.h>
+	"Grafo.h"
+
+1431888960 c:\users\user1\dropbox\bsi\ed2\trabalhofinal\grafo.h
+
+1499660940 source:c:\users\user1\dropbox\bsi\ed2\trabalhofinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Grafo.h"
+
+1431888960 c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\grafo.h
+
+1500774519 c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\hashindice.h
+
+1500774590 source:c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\hashindice.c
+	<stdlib.h>
+	<string.h>
+	"hashIndice.h"
+
+1500894106 source:c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\tabelahash.c
+	<stdlib.h>
+	<string.h>
+	"TabelaHash.h"
+
+1500893196 c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\tabelahash.h
+	"ListaSequencial.h"
+
+1500893173 c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\listasequencial.h
+
+1500894106 source:c:\users\dibra\dropbox\bsi\ed2\trabalhofinal\listasequencial.c
+	<stdio.h>
+	<stdlib.h>
+	"ListaSequencial.h"
+

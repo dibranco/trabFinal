@@ -1,0 +1,78 @@
+int main()
+{
+
+    FILE *arq;
+    arq = fopen("dadosPesquisadores.txt","r");
+    if(arq == NULL){
+        printf("\nERRO NA ABERTURA DO ARQUIVO!");
+        return 0;
+    }
+
+    char *pont;
+    char linha[400];
+    char nome[100];
+    char trab[300];
+
+
+    int numNomes = 0;
+    char nomes[100][1000];
+    int numTrab = 0;
+    char trabalhos[300][1000];
+
+    int i = 0;
+    int j;
+
+    int k = 0;
+    int l;
+
+    int achouNome;
+    int achouTrab;
+    while(1){
+        //printf("aqui");
+        fgets(linha, 400, arq);
+        //printf("linha = %s",linha);
+        achouNome = 0;
+        pont = strtok(linha, "\t");
+        printf("\n\n%s",pont);
+
+        for(j = 0; j < i + 1; j++){
+            if(strcmp(pont, nomes[j]) == 0){
+                achouNome = 1;
+            }
+        }
+        //printf("aqui");
+        if(achouNome == 0){
+            strcpy(nomes[i], pont);
+            i++;
+            numNomes++;
+        }
+
+
+        achouTrab = 0;
+        pont = strtok(NULL,"\t");
+        for(l = 0; l < k + 1; l++){
+            if(strcmp(pont, nomes[l]) == 0)
+                achouTrab = 1;
+        }
+        if(achouTrab == 0){
+            strcpy(trabalhos[k], pont);
+            k++;
+            numTrab++;
+        }
+
+        if(feof(arq))
+            break;
+
+
+   }
+
+
+
+    printf("\nNum nomes = %d",numNomes);
+    printf("\nNum trabalhos = %d",numTrab);
+
+
+
+
+    return(0);
+}
